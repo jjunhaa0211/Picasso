@@ -1,21 +1,30 @@
 {
   "name": "picasso-draw",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
   },
-  "author": "",
+  "author": "jjunhaa0211",
   "description": "그림을 그릴 수 있는 라이브러리입니다.",
-  "dependencies": {
-    "commander": "^12.1.0"
+  "devDependencies": {
+    "commander": "^12.1.0",
+    "http-server": "^0.13.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.3",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^5.0.4"
   },
   "bin": {
     "log-run": "bin/cli.js"
   },
   "license": "MIT",
   "keywords": [
-    "sample"
+    "canvas",
+    "drawing",
+    "app"
   ],
   "files": [
     "cli"
